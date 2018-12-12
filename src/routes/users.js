@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var userApi = require('./user');
+var userApi = require('./users_api');
 
 /* GET users listing. */
-router.get('/api/userlist', userApi.selectUser);
+router.post('/api/addUser', userApi.addUser);
 
 module.exports = router;
